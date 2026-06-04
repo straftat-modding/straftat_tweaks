@@ -58,8 +58,10 @@ static class OutlineColor
 
         // Weapon text yoinked from kestrel; Default text is RGBA(2.000, 1.106, 0.000, 1.000)
 
-        Color HDR_color = weaponTextColor.Value;
-        if (HDR_color != DefaultTextColor)
+        Color HDR_color;
+        if (weaponTextColor.Value == new Color(1, 1, 0) || weaponTextColor.Value == DefaultTextColor)
+            HDR_color = DefaultTextColor;
+        else
             HDR_color = weaponTextColor.Value * Vector4.one * weaponTextBrightness.Value;
         PauseManager.Instance.grabPopup.fontSharedMaterial.SetColor(textOutline, HDR_color);
         PauseManager.Instance.interactPopup.fontSharedMaterial.SetColor(textOutline, HDR_color);

@@ -6,7 +6,7 @@
 
         <BepInExPluginGuid>com.koki.tweaks</BepInExPluginGuid>
         <BepInExPluginName>STRAFTAT Tweaks</BepInExPluginName>
-        <BepInExPluginVersion>1.3.2</BepInExPluginVersion>
+        <BepInExPluginVersion>1.3.3</BepInExPluginVersion>
 
         <BepInExPluginDir>C:\Users\koki\AppData\Roaming\com.kesomannen.gale\straftat\profiles\Default\BepInEx\plugins</BepInExPluginDir>
         <Thunderstore>.\.thunderstore</Thunderstore>
